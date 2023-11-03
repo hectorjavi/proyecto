@@ -18,10 +18,6 @@ def create_default_user():
         )
         user.full_clean()
         user.save()
-        # Create permissions
-        all_permissions = Permission.objects.all()
-        user.user_permissions.set(all_permissions)
-        user.save()
 
 
 @receiver(post_migrate)

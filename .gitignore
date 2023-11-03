@@ -5,6 +5,7 @@ __pycache__/
 
 # configuration environnement 
 .env*
+env*
 devenv
 
 # Django 
